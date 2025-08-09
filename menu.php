@@ -4,7 +4,7 @@
   <!--begin::Head-->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>AdminLTE v4 | Dashboard</title>
+    <title>UTCD INFO</title>
     <!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="AdminLTE v4 | Dashboard" />
@@ -59,6 +59,9 @@
       integrity="sha256-+uGLJmmTKOqBr+2E6KDYs/NRsHxSkONXFHUL0fy2O/4="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/sweetalert2/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
   </head>
   <!--end::Head-->
   <!--begin::Body-->
@@ -218,22 +221,20 @@
             <li class="nav-item dropdown user-menu">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 <img
-                    src="dist/assets/img/perfil.gif"
                   class="user-image rounded-circle shadow"
-                  alt="User Image"
+                  
                 />
-                <span class="d-none d-md-inline">Diego Salinas</span>
+                <span class="d-none d-md-inline">Carlos Galeano</span>
               </a>
               <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                 <!--begin::User Image-->
                 <li class="user-header text-bg-primary">
                   <img
-                      src="dist/assets/img/perfil.gif"
                     class="rounded-circle shadow"
-                    alt="User Image"
+                    
                   />
                   <p>
-                    Diego Salinas - Ing. Informatico
+                    Carlos Galeano - Ing. Informatico
                     <small>Miembro desde febrero. 2025</small>
                   </p>
                 </li>
@@ -296,57 +297,138 @@
             >
               <li class="nav-item menu-open">
                 <a href="#" class="nav-link active">
-                  <i class="nav-icon bi bi-speedometer"></i>
+                  <i class="nav-icon bi-person-lines-fill"></i>
                   <p>
-                    Venta Libros Digitales
+                    REFERENCIALES
                     <i class="nav-arrow bi bi-chevron-right"></i>
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                      <a href="#" class="nav-link active" 
-                         onclick="mostrarListarDepartamento(); return false;">
-                      <i class="nav-icon bi bi-circle"></i>
-                      <p>Departamento</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link active" 
-                         onclick="mostrarListarCiudad(); return false;">
-                      <i class="nav-icon bi bi-circle"></i>
-                      <p>Ciudad</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-  <a href="#" class="nav-link" onclick="mostrarListarUsuarioss(); return false;">
-    <i class="nav-icon bi bi-circle"></i>
-    <p>Usuarios</p>
+                    <li class="nav-item">
+  <a href="#" class="nav-link" onclick="mostrarListarProductos(); return false;">
+    <i class="nav-icon bi-box-seam"></i>
+    <p>Productos</p>
   </a>
 </li>
 <li class="nav-item">
+  <a href="#" class="nav-link" onclick="mostrarListarProveedor(); return false;">
+    <i class="nav-icon bi-people-fill"></i>
+    <p>Proveedores</p>
+  </a>
+</li>
+<li class="nav-item">
+  <a href="#" class="nav-link" onclick="mostrarListarCliente(); return false;">
+    <i class="nav-icon bi bi-person"></i>
+    <p>Clientes</p>
+  </a>
+</li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link" 
+                         onclick="mostrarListarDepartamento(); return false;">
+                      <i class="nav-icon bi bi-map"></i>
+                      <p>Departamentos</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" 
+                         onclick="mostrarListarCiudad(); return false;">
+                      <i class="nav-icon bi bi-house-door"></i>
+                      <p>Ciudades</p>
+                    </a>
+                  </li>
+<!--                  <li class="nav-item">
+  <a href="#" class="nav-link" onclick="mostrarListarUsuarioss(); return false;">
+    <i class="nav-icon bi bi-people"></i>
+    <p>Usuarios</p>
+  </a>
+</li>
+
+<li class="nav-item">
   <a href="#" class="nav-link" onclick="mostrarListarEbooks(); return false;">
-    <i class="nav-icon bi bi-circle"></i>
+    <i class="nav-icon bi-book-fill"></i>
     <p>Ebooks</p>
   </a>
 </li>
 <li class="nav-item">
   <a href="#" class="nav-link" onclick="mostrarListarCompras(); return false;">
-    <i class="nav-icon bi bi-circle"></i>
+    <i class="nav-icon bi-cart-check"></i>
     <p>Compras</p>
   </a>
 </li>
 <li class="nav-item">
   <a href="#" class="nav-link" onclick="mostrarListarCategorias(); return false;">
-    <i class="nav-icon bi bi-circle"></i>
+    <i class="nav-icon bi-tags-fill"></i>
     <p>Categorías</p>
   </a>
 </li>
 <li class="nav-item">
   <a href="#" class="nav-link" onclick="mostrarListarResenas(); return false;">
-    <i class="nav-icon bi bi-circle"></i>
+    <i class="nav-icon bi-star-fill"></i>
     <p>Reseñas</p>
   </a>
+</li>-->
+
+                  
+                </ul>
+              </li>
+              <li class="nav-item menu-open">
+                <a href="#" class="nav-link active">
+                  <i class="nav-icon bi bi-bag"></i>
+                  <p>
+                    COMPRAS
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                
+                  
+<li class="nav-item">
+  <a href="#" class="nav-link" onclick="mostrarListarPresupuestos(); return false;">
+    <i class="nav-icon bi bi-file-earmark-text"></i>
+    <p>Presupuestos</p>
+  </a>
 </li>
+
+<li class="nav-item">
+  <a href="#" class="nav-link listar-ordenes">
+    <i class="nav-icon bi bi-file-earmark-text"></i>
+    <p>Orden de Compra</p>
+  </a>
+</li>
+
+
+
+
+                  
+                </ul>
+              </li>
+              <li class="nav-item menu-open">
+                <a href="#" class="nav-link active">
+                  <i class="nav-icon bi bi-bag"></i>
+                  <p>
+                    Ventas
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                
+                  
+<li class="nav-item">
+  <a href="#" class="nav-link" onclick="; return false;">
+    <i class="nav-icon bi bi-file-earmark-text"></i>
+    <p>Remision</p>
+  </a>
+</li>
+
+<li class="nav-item">
+  <a href="#" class="nav-link">
+    <i class="nav-icon bi bi-file-earmark-text"></i>
+    <p>Nota de Credito</p>
+  </a>
+</li>
+
+
+
 
                   
                 </ul>
@@ -367,7 +449,7 @@
           <div class="container-fluid">
             <!--begin::Row-->
             <div class="row">
-              <div class="col-sm-6"><h3 class="mb-0">Menu de Navegación</h3></div>
+              <div class="col-sm-6"><h3 class="mb-0">Menu</h3></div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
                   <li class="breadcrumb-item"><a href="#">Inicio</a></li>
@@ -653,6 +735,7 @@
       const sparkline3 = new ApexCharts(document.querySelector('#sparkline-3'), option_sparkline3);
       sparkline3.render();
     </script>
+    <script src="css/sweetalert2/sweetalert2.min.js"></script>
     <script src="vistas/jquery-3.7.1.min.js"></script>
     <script src="vistas/util.js"></script>
     <script src="vistas/departamento.js"></script>
@@ -660,8 +743,13 @@
     <script src="vistas/usuarioss.js"></script>
     <script src="vistas/ebooks.js"></script>
     <script src="vistas/compras.js"></script>
+    <script src="vistas/presupuestos_compra.js"></script>
+    <script src="vistas/orden_compra.js"></script>
     <script src="vistas/categorias.js"></script>
     <script src="vistas/resenas.js"></script>
+    <script src="vistas/proveedor.js"></script>
+    <script src="vistas/cliente.js"></script>
+    <script src="vistas/productos.js"></script>
     <!--end::Script-->
   </body>
   <!--end::Body-->
