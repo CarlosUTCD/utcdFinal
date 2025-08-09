@@ -336,37 +336,6 @@
                       <p>Ciudades</p>
                     </a>
                   </li>
-<!--                  <li class="nav-item">
-  <a href="#" class="nav-link" onclick="mostrarListarUsuarioss(); return false;">
-    <i class="nav-icon bi bi-people"></i>
-    <p>Usuarios</p>
-  </a>
-</li>
-
-<li class="nav-item">
-  <a href="#" class="nav-link" onclick="mostrarListarEbooks(); return false;">
-    <i class="nav-icon bi-book-fill"></i>
-    <p>Ebooks</p>
-  </a>
-</li>
-<li class="nav-item">
-  <a href="#" class="nav-link" onclick="mostrarListarCompras(); return false;">
-    <i class="nav-icon bi-cart-check"></i>
-    <p>Compras</p>
-  </a>
-</li>
-<li class="nav-item">
-  <a href="#" class="nav-link" onclick="mostrarListarCategorias(); return false;">
-    <i class="nav-icon bi-tags-fill"></i>
-    <p>Categorías</p>
-  </a>
-</li>
-<li class="nav-item">
-  <a href="#" class="nav-link" onclick="mostrarListarResenas(); return false;">
-    <i class="nav-icon bi-star-fill"></i>
-    <p>Reseñas</p>
-  </a>
-</li>-->
 
                   
                 </ul>
